@@ -1,1 +1,70 @@
-/* You can add global styles to this file, and also import other style files */
+// @import "./3rd-party-custom/bootstrap-grid/bootstrap-grid.min.css";
+@import "~bootstrap/dist/css/bootstrap.css";
+
+body {
+  @gutter-size: 6px;
+  @border-hover-color: #2ab2db;
+  @border-hover-color: #f159a0;
+
+  .tile-row {
+
+    display: grid;
+    grid-template-columns: repeat(3, minmax(10px, 300px));
+    grid-row-gap: @gutter-size;
+    grid-column-gap: @gutter-size;
+    justify-content: center;
+    align-content: center;
+    // margin-top: 50px;
+
+    // 0 - 768px
+    @media (max-width:768px) {
+      grid-template-columns: repeat(2, minmax(10px, 300px));
+    }
+
+  }
+
+  mik-tile {
+    display: block;
+    
+    .tile-con {
+      position: relative;
+      display: block;
+      background-size: cover;
+      // background-color: #ccc;
+      // border: 1px solid #ccc;
+      height: 200px;
+      box-sizing: border-box;
+
+      // 0 - 320px
+      @media (max-width:320px)  {
+        height: 80px;
+      }
+      // 320px - 768px
+      @media (min-width:320px) and (max-width : 768px) {
+        height: 150px;
+      }
+
+      .tile-title {
+        //display: none;
+        position: absolute;
+        top: -1em;
+        white-space: nowrap;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        font-size: 12px;
+        background-color: lighten(@border-hover-color, 35);
+        padding: 2px;
+      }
+      
+      &:hover {
+        border: 3px solid @border-hover-color;
+        // border-radius: 50%;
+        .tile-title {
+          border: 1px solid @border-hover-color;
+          display: block;
+          z-index: 100;
+        }
+      }
+    }
+  }
+
+}
