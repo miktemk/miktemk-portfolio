@@ -1,3 +1,3 @@
-# Vidka Video Editor
+# Text-to-Speech Audiobook reader
 
-The idea for this down-to-earth video editor came from the frustrations of dealing with the limitations of both free and payed non-linear video editors available on the market, specifically for Windows.
+Summary coming soon.
