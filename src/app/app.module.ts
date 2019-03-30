@@ -10,6 +10,7 @@ import { UIRouterJustViewPageComponent } from './common/uirouter-justview-page.c
 import { GenericMarkdownPageComponent } from './generic-markdown-page/generic-markdown-page.component';
 import { HomePageComponent } from './home-page/home-page.component';
 import { TileComponent } from './tile/tile.component';
+import { MyAppRouteData } from './common/my-app-route-data';
 
 
 const uiRouterStates: Ng2StateDeclaration[] = [
@@ -17,6 +18,14 @@ const uiRouterStates: Ng2StateDeclaration[] = [
     name: 'home',
     url: '',
     component: HomePageComponent,
+  },
+  {
+    name: 'about',
+    url: `/about`,
+    component: GenericMarkdownPageComponent,
+    data: <MyAppRouteData> {
+      mdDocument: `assets/md-pages/about.md`,
+    }
   },
   {
     name: 'proj',
@@ -29,7 +38,7 @@ const uiRouterStates: Ng2StateDeclaration[] = [
   mdRoute('image-animator'),
   mdRoute('tts-browser', 'TextToSpeechBrowser'),
   mdRoute('tts-book-reader', 'TextToSpeechAudiobookReader'),
-  mdRoute('tts-utility'),
+  mdRoute('tts-utility', 'TextToSpeechUtility'),
   mdRoute('audio-booker', 'AudioBooker'),
   mdRoute('ae-syntax-editor', 'AvalonEditSyntaxHighlightEditor'),
   mdRoute('prolog-ide', 'CSharpPrologIDE'),

@@ -7,5 +7,6 @@ Generate thumbnail using [magick CLI](https://imagemagick.org/script/command-lin
 
 Build like this:
 
+    rm -rf ../miktemk.github.io/assets
     ng build --output-path ../miktemk.github.io --delete-output-path false --configuration=production
 
