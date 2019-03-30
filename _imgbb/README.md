@@ -15,6 +15,12 @@ https://ibb.co/zJXkGQr
 https://ibb.co/37MNQhx
 https://ibb.co/TTGRY1X
 https://ibb.co/cN0bm01
+https://ibb.co/smKY6Md
+https://ibb.co/Mpvxgd3
+https://ibb.co/dBx4KZJ
+https://ibb.co/Yyh5NPT
+https://ibb.co/6mxP211
+https://ibb.co/KWX2b5H
 
 ### Image links
 
@@ -33,3 +39,9 @@ https://i.ibb.co/TL4CmYk/Screenshot-tts-utility.png
 https://i.ibb.co/L8JtHpT/Screenshot-tts-utility-thumb.jpg
 https://i.ibb.co/X4PpjDB/Screenshot-vidka.png
 https://i.ibb.co/NL5145s/Screenshot-audio-booker.png
+[AE syntax thumb](https://i.ibb.co/S0j46S9/Screenshot-46.png)
+[AE syntax big](https://i.ibb.co/YRcsyqF/Screenshot-45.png)
+https://i.ibb.co/WnjvKCp/Screenshot-ttsabr-thumb.png
+https://i.ibb.co/k9XLG56/Screenshot-ttsabr.png
+https://i.ibb.co/HqVtBKQ/Screenshot-prolog-ide.png
+https://i.ibb.co/47GTcYY/Screenshot-prolog-ide-thumb.png

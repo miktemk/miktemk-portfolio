@@ -1,2 +1,5 @@
 <h1 *ngIf="title">{{ title }}</h1>
+<div class="float-right">
+  <a *ngIf="githubRepo" class="github-button" href="{{ githubRepo }}" data-size="large" aria-label="Link to repository on GitHub">Github repo!</a>
+</div>
 <markdown [src]="document"></markdown>

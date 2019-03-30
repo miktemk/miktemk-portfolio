@@ -11,6 +11,7 @@ export class GenericMarkdownPageComponent implements OnInit {
 
   title: string;
   document: string;
+  githubRepo: string;
 
   constructor(
     private uiTrans: Transition,
@@ -21,6 +22,7 @@ export class GenericMarkdownPageComponent implements OnInit {
     let routeData = this.uiTrans.to().data as MyAppRouteData;
     this.title = routeData.title;
     this.document = routeData.mdDocument;
+    this.githubRepo = routeData.githubRepo;
   }
   
 }

@@ -7,12 +7,15 @@ import { GenericMarkdownPageComponent } from 'app/generic-markdown-page/generic-
 import { MyAppRouteData } from './my-app-route-data';
 
 
-export function mdRoute(atom: string): Ng2StateDeclaration {
+export function mdRoute(atom: string, githubId?: string): Ng2StateDeclaration {
   return <Ng2StateDeclaration>{
     name: `proj.${atom}`,
     url: `/${atom}`,
     component: GenericMarkdownPageComponent,
-    data: <MyAppRouteData> { mdDocument: `assets/md-pages/${atom}.md` }
+    data: <MyAppRouteData> {
+      mdDocument: `assets/md-pages/${atom}.md`,
+      githubRepo: githubId ? `https://github.com/miktemk/${githubId}` : null,
+    }
   };
 }
 

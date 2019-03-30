@@ -24,13 +24,15 @@ const uiRouterStates: Ng2StateDeclaration[] = [
     abstract: true,
     component: UIRouterJustViewPageComponent,
   },
-  mdRoute('vidka'),
+  mdRoute('vidka', 'VidkaEditor'),
   mdRoute('image-harvester'),
   mdRoute('image-animator'),
-  mdRoute('tts-browser'),
-  mdRoute('tts-book-reader'),
+  mdRoute('tts-browser', 'TextToSpeechBrowser'),
+  mdRoute('tts-book-reader', 'TextToSpeechAudiobookReader'),
   mdRoute('tts-utility'),
-  mdRoute('audio-booker'),
+  mdRoute('audio-booker', 'AudioBooker'),
+  mdRoute('ae-syntax-editor', 'AvalonEditSyntaxHighlightEditor'),
+  mdRoute('prolog-ide', 'CSharpPrologIDE'),
 ];
 
 
