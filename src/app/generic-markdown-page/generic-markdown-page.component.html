@@ -1,4 +1,7 @@
 <h1 *ngIf="title">{{ title }}</h1>
+<section class="downloads">
+  <a class="download-button" href="{{ downloadUrl }}"><i class="fas fa-download"></i> Download</a>
+</section>
 <div class="float-right">
   <a *ngIf="githubRepo" class="github-button" href="{{ githubRepo }}" data-size="large" aria-label="Link to repository on GitHub">Github repo!</a>
 </div>

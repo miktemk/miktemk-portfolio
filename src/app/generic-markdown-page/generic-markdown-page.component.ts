@@ -12,6 +12,7 @@ export class GenericMarkdownPageComponent implements OnInit {
   title: string;
   document: string;
   githubRepo: string;
+  downloadUrl: string;
 
   constructor(
     private uiTrans: Transition,
@@ -23,6 +24,7 @@ export class GenericMarkdownPageComponent implements OnInit {
     this.title = routeData.title;
     this.document = routeData.mdDocument;
     this.githubRepo = routeData.githubRepo;
+    this.downloadUrl = routeData.downloadUrl;
   }
   
 }
