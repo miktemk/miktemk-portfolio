@@ -15,7 +15,7 @@ export function mdRoute(atom: string, title: string, githubId?: string, download
     data: <MyAppRouteData> {
       title: title,
       mdDocument: `assets/md-pages/${atom}.md`,
-      githubRepo: githubId ? `https://github.com/miktemk/${githubId}` : null,
+      githubRepo: githubId,
       downloadUrl: downloadUrl
     }
   };

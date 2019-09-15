@@ -3,6 +3,7 @@ import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { Ng2StateDeclaration, UIRouterModule } from '@uirouter/angular';
 import { MarkdownModule } from 'ngx-markdown';
+import { NtkmeButtonModule } from '@ctrl/ngx-github-buttons';
 
 import { AppComponent } from './app.component';
 import { mdRoute, uiRouterConfigFn_addVisualizer } from './common/route-helpers';
@@ -56,6 +57,7 @@ const uiRouterStates: Ng2StateDeclaration[] = [
       config: uiRouterConfigFn_addVisualizer
     }),
     MarkdownModule.forRoot({ loader: HttpClient }),
+    NtkmeButtonModule,
   ],
   declarations: [
     AppComponent,

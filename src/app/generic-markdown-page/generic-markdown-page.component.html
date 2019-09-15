@@ -1,8 +1,16 @@
 <h1 *ngIf="title">{{ title }}</h1>
 <section class="downloads">
   <a class="download-button" href="{{ downloadUrl }}"><i class="fas fa-download"></i> Download</a>
+  <div class="float-right">
+    <ntkme-github-button
+      user="miktemk"
+      [repo]="githubRepo"
+      type="star"
+      size="large"
+      standardIcon="true"
+      >
+      sadsad
+    </ntkme-github-button>
+  </div>
 </section>
-<div class="float-right">
-  <a *ngIf="githubRepo" class="github-button" href="{{ githubRepo }}" data-size="large" aria-label="Link to repository on GitHub">Github repo!</a>
-</div>
 <markdown [src]="document"></markdown>
