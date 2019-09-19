@@ -42,7 +42,7 @@ const uiRouterStates: Ng2StateDeclaration[] = [
   mdRoute('tts-utility', 'Text-to-Speech Utility', 'TextToSpeechUtility', 'https://github.com/miktemk/TextToSpeechUtility/releases/download/1.0.0/TextToSpeechUtility.zip'),
   mdRoute('audio-booker', 'Audio booker', 'AudioBooker', 'https://github.com/miktemk/AudioBooker/releases/download/1.0.0/AudioBooker.zip'),
   mdRoute('ae-syntax-editor', 'Avalon Edit XSHD Syntax Highlight Editor', 'AvalonEditSyntaxHighlightEditor', 'https://github.com/miktemk/AvalonEditSyntaxHighlightEditor/releases/download/1.0.0/AvalonEditSyntaxHighlightEditor.zip'),
-  mdRoute('prolog-ide', 'Prolog IDE', 'CSharpPrologIDE', 'https://github.com/miktemk/CSharpPrologIDE/releases/download/1.0.2/CSharpPrologIDE.zip'),
+  mdRoute('prolog-ide', 'Prolog IDE', 'CSharpPrologIDE', 'https://github.com/miktemk/CSharpPrologIDE/releases/download/1.0.3/CSharpPrologIDE.zip'),
 ];
 
 
