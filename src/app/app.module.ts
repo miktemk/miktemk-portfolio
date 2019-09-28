@@ -1,9 +1,10 @@
-import { HttpClient, HttpClientModule } from '@angular/common/http';
+import { HttpClientModule } from '@angular/common/http';
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { Ng2StateDeclaration, UIRouterModule } from '@uirouter/angular';
 import { MarkdownModule } from 'ngx-markdown';
 import { NtkmeButtonModule } from '@ctrl/ngx-github-buttons';
+import { NgxGoogleAnalyticsModule } from 'ngx-google-analytics';
 
 import { AppComponent } from './app.component';
 import { mdRoute, uiRouterConfigFn_addVisualizer } from './common/route-helpers';
@@ -50,13 +51,14 @@ const uiRouterStates: Ng2StateDeclaration[] = [
   imports: [
     BrowserModule,
     HttpClientModule,
+    NgxGoogleAnalyticsModule.forRoot('UA-36505243-1'),
     UIRouterModule.forRoot({
       states: uiRouterStates,
       useHash: true,
       otherwise: { state: 'externalarea.signin' },
       config: uiRouterConfigFn_addVisualizer
     }),
-    MarkdownModule.forRoot({ loader: HttpClient }),
+    MarkdownModule.forRoot({ loader: HttpClientModule }),
     NtkmeButtonModule,
   ],
   declarations: [

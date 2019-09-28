@@ -1,4 +1,6 @@
 import { Component } from '@angular/core';
+import { UIRouter, Transition } from '@uirouter/angular';
+import { GoogleAnalyticsService } from 'ngx-google-analytics';
 
 @Component({
   selector: 'mik-root',
@@ -6,5 +8,21 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.less']
 })
 export class AppComponent {
-  title = 'miktemk-portfolio';
+
+  private transitionServiceOnSuccess$sub: Function;
+
+  constructor(
+    private uiRouter: UIRouter,
+    private $gaService: GoogleAnalyticsService
+  ) {}
+
+  ngOnInit() {
+    this.transitionServiceOnSuccess$sub = this.uiRouter.transitionService.onSuccess({}, (uiTrans: Transition) => {
+      this.$gaService.pageView(uiTrans.to().url, uiTrans.to().url)
+    })
+  }
+
+  ngOnDestroy() {
+    this.transitionServiceOnSuccess$sub();
+  }
 }
