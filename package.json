@@ -25,7 +25,7 @@
     "@uirouter/visualizer": "^7.0.0",
     "bootstrap": "^4.2.1",
     "core-js": "^2.5.4",
-    "lodash": "^4.17.11",
+    "lodash": "^4.17.21",
     "ngx-google-analytics": "^8.0.0",
     "ngx-markdown": "^8.1.1",
     "rxjs": "~6.5.3",
