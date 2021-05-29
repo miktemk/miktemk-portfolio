@@ -10,21 +10,21 @@
   </ul> -->
   <!-- Place this tag where you want the button to render. -->
   <ul class="navbar-nav mr-auto">
-     
+
   </ul>
   <div class="form-inline">
     <ntkme-github-button
       user="miktemk"
       type="follow"
       size="large"
-      standardIcon="true">
+      [standardIcon]="true">
     </ntkme-github-button>
   </div>
 </nav>
 
 <div class="container">
   <ui-view></ui-view>
-  
+
   <footer class="page-footer">
     <div class="row">
       <div class="col-md-4">
@@ -34,7 +34,7 @@
         <a href="/mikhail_temkine_resume.rtf">Resume</a>
       </div>
       <div class="col-md-4">
-        © 2018 Copyright miktemk
+        © {{ copyrightYear }} Copyright miktemk
       </div>
     </div>
   </footer>
