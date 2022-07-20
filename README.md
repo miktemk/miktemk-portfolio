@@ -10,3 +10,7 @@ Build like this:
     rm -rf ../miktemk.github.io/assets
     ng build --output-path ../miktemk.github.io --delete-output-path false --configuration=production
 
+Or without the hashing in the filename
+
+    ng build --output-path ../miktemk.github.io --delete-output-path false --output-hashing none --configuration=production
+
